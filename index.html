@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health & Wellness Chatbot</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #b440f3;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .chat-container {
+            background: rgb(79, 81, 236);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    background: rgba(8, 198, 208, 0.4);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.4);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+   
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+        }
+        @media (max-width: 600px) {
+            iframe {
+                height: 450px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Health & Wellness Guide Chatbot</h1>
+
+    <div class="chat-container">
+     
+    <h2 style="color:#0d0e0d; font-weight:600;">Health & Wellness</h2>
+    <p>
+        Wellness means caring for your mind and body through movement, good food, rest, and stress
+        management. These habits help you feel calmer, stronger, and healthier each day.
+    </p>
+</div>
+      
+     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="HealthGuideBot"
+  agent-id="c254280f-dc9b-4ec7-93e1-74c6ed25e76c"
+  language-code="en"
+></df-messenger>
+    </div>
+   
+</body>
+</html>
